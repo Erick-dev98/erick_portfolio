@@ -5,29 +5,53 @@ import photo from '../assets/portfolio_profile1.png';
 
 const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [isMedium, setIsMedium] = useState(false);
+  const [isLarge, setIsLarge] = useState(false);
+  const [isExtraLarge, setIsExtraLarge] = useState(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(max-width: 500px)');
-    setIsMobile(mediaQuery.matches);
-
-    const handleMediaQueryChange = (event) => {
+    const smallMediaQuery = window.matchMedia('(max-width: 500px)');
+    const mediumMediaQuery = window.matchMedia('(max-width: 800px)');
+    const largeMediaQuery = window.matchMedia('(min-width: 801px) and (max-width: 1024px)');
+    const extraLargeMediaQuery = window.matchMedia('(min-width: 1025px) and (max-width: 1280px)');
+  
+    setIsMobile(smallMediaQuery.matches);
+    setIsMedium(mediumMediaQuery.matches);
+    setIsLarge(largeMediaQuery.matches);
+    setIsExtraLarge(extraLargeMediaQuery.matches);
+  
+    const handleSmallMediaQueryChange = (event) => {
       setIsMobile(event.matches);
     };
+  
+    const handleMediumMediaQueryChange = (event) => {
+      setIsMedium(event.matches);
+    };
 
-    mediaQuery.addEventListener('change', handleMediaQueryChange);
+    const handleLargeMediaQueryChange = (event) => {
+      setIsLarge(event.matches);
+    };
 
+    const handleExtraLargeMediaQueryChange = (event) => {
+      setIsExtraLarge(event.matches);
+    };
+  
+    smallMediaQuery.addEventListener('change', handleSmallMediaQueryChange);
+    mediumMediaQuery.addEventListener('change', handleMediumMediaQueryChange);
+    largeMediaQuery.addEventListener('change', handleLargeMediaQueryChange);
+    extraLargeMediaQuery.addEventListener('change', handleExtraLargeMediaQueryChange);
+  
     return () => {
-      mediaQuery.removeEventListener('change', handleMediaQueryChange);
+      smallMediaQuery.removeEventListener('change', handleSmallMediaQueryChange);
+      mediumMediaQuery.removeEventListener('change', handleMediumMediaQueryChange);
+      largeMediaQuery.removeEventListener('change', handleLargeMediaQueryChange);
+      extraLargeMediaQuery.removeEventListener('change', handleExtraLargeMediaQueryChange);
     };
   }, []);
 
   return (
     <section className='relative w-full h-screen mx-auto'>
       <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
-        <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915eff]'/>
-          <div className='w-1 sm:h-80 h-40 violet-gradient'/>
-        </div>
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>Hi, I'm <span className='text-[#915eff]'>Erick</span></h1>
@@ -38,30 +62,18 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className={`absolute ${isMobile ? 'xs:bottom-10 bottom-32' : 'top-0 right-0'} rounded`}>
-        <img src={photo} alt=""/>
+      <div className={`absolute ${
+        isMobile 
+          ? 'xs:bottom-10 bottom-32' 
+          : isMedium 
+            ? 'top-[50%] left-[50%] transform translate[-50%, -50%]'
+            : (isLarge || isExtraLarge)
+              ? 'top-0 right-0 mt-20 mr-5 rounded-full'
+              : 'top-0 right-0 mt-20 mr-5 rounded-full'
+      }`}>
+        <img src={photo} alt="" className="w-full h-full rounded-full"/>
       </div>
 
-      {/* Uncomment to use ComputersCanvas */}
-      {/* <ComputersCanvas /> */}
-      
-      {/* <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
-        <a href='#about'>
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
-            <motion.dev
-            animate={{
-              y: [0, 24, 0]
-            }}
-            transition={{
-              duration: 1.5,
-              repeat: Infinity,
-              repeatType: 'loop'
-            }}
-            className="w-3 h-3 rounded-full bg-secondary mb-1"
-            />
-          </div>
-        </a>
-      </div> */}
     </section>
   )
 }
