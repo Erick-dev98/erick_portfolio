@@ -30,6 +30,7 @@ import swahilibox from "./company/swahilibox.png"
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import commerce from './e-commerce.jpg'
 
 export {
   logo,
@@ -60,5 +61,6 @@ export {
   carrent,
   jobit,
   tripguide,
+  commerce,
   swahilibox
 };
