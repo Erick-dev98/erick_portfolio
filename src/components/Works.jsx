@@ -8,7 +8,7 @@ import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link}) => {
+const ProjectCard = ({ index, name, description, tags, image, source_code_link, project_link}) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
@@ -23,8 +23,8 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link})
           <img 
           src={image}
           alt={name}
-          className='w-full h-full object-cover rounded-2xl'
-          onClick={() => window.open(source_code_link, "_blank")} // Added onClick handler here
+          className='w-full h-full object-cover rounded-2xl cursor-pointer'
+          onClick={() => window.open(project_link, "_blank")}
 
           />
 
