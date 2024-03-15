@@ -25,6 +25,7 @@ import {
     tripguide,
     threejs,
     commerce,
+    drummachine
   } from "../assets";
   
   export const navLinks = [
@@ -219,28 +220,46 @@ import {
       ],
       image: commerce,
       source_code_link: "https://github.com/Erick-dev98",
+      project_link: "https://ecommerce-frontend-one-virid.vercel.app/",
     },
-    // {
-    //   name: "Job IT",
-    //   description:
-    //     "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    //   tags: [
-    //     {
-    //       name: "react",
-    //       color: "blue-text-gradient",
-    //     },
-    //     {
-    //       name: "restapi",
-    //       color: "green-text-gradient",
-    //     },
-    //     {
-    //       name: "scss",
-    //       color: "pink-text-gradient",
-    //     },
-    //   ],
-    //   image: jobit,
-    //   source_code_link: "https://github.com/",
-    // },
+    {
+      name: "Drum Machine",
+      description:
+        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "orange-text-gradient",
+        },        
+      ],
+      image: drummachine,
+      source_code_link: "https://github.com/Erick-dev98",
+      project_link: "https://drum-machine-murex-gamma.vercel.app/",
+    },
+  //   name: "Job IT",
+  //   description:
+  //     "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+  //   tags: [
+  //     {
+  //       name: "react",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "restapi",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "scss",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: jobit,
+  //   source_code_link: "https://github.com/",
+  // },
     // {
     //   name: "Trip Guide",
     //   description:
