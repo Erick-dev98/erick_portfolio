@@ -24,6 +24,8 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link})
           src={image}
           alt={name}
           className='w-full h-full object-cover rounded-2xl'
+          onClick={() => window.open(source_code_link, "_blank")} // Added onClick handler here
+
           />
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>

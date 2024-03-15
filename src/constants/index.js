@@ -219,7 +219,7 @@ import {
         },
       ],
       image: commerce,
-      source_code_link: "https://github.com/Erick-dev98",
+      source_code_link: "https://github.com/Erick-dev98/ecommerce-frontend",
       project_link: "https://ecommerce-frontend-one-virid.vercel.app/",
     },
     {
@@ -237,7 +237,7 @@ import {
         },        
       ],
       image: drummachine,
-      source_code_link: "https://github.com/Erick-dev98",
+      source_code_link: "https://github.com/Erick-dev98/drum_machine",
       project_link: "https://drum-machine-murex-gamma.vercel.app/",
     },
   //   name: "Job IT",
