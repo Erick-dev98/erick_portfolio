@@ -119,29 +119,29 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
+      title: "Frontend Libraries",
       company_name: "SwahiliBox",
       icon: swahilibox,
       iconBg: "#383E56",
-      date: "Jan 2024 - Present",
+      date: "2022 - Present",
       points: [
-        "Developed user interface components using React.js, focusing on state management and component lifecycle methods.",
+        "Developed user interface components using ReactJs, Redux, NextJs, threeJs, Redux, Tailwind.css and Bootstrap focusing on state management and component lifecycle methods.",
         "Translated design mockups into responsive web pages, ensuring consistency across devices.",
         "Integrated third-party APIs and libraries to enhance application functionality.",
         "Implemented Redux or Context API for efficient state management in complex applications.",
       ],
     },
     {
-      title: "Node.js Developer",
+      title: "Backend Frameworks",
       company_name: "SwahiliBox",
       icon: swahilibox,
       iconBg: "#E6DEDD",
-      date: "Jan 2024 - Present",
+      date: "2022 - Present",
       points: [
         "Developed scalable and efficient server-side applications using Node.js, leveraging its asynchronous and event-driven architecture.",
         "Designed and implemented RESTful APIs for seamless communication between client-side and server-side components, adhering to best practices and standards.",
         "Utilized Express.js framework to streamline the development process and create robust web applications with minimal boilerplate code.",
-        "Integrated MongoDB or other databases with Node.js applications for efficient data storage and retrieval, ensuring data consistency and integrity.",
+        "Integrated MongoDB and other databases like Firebase with Node.js applications for efficient data storage and retrieval, ensuring data consistency and integrity.",
       ],
     },
     {
@@ -149,9 +149,8 @@ import {
       company_name: "SwahiliBox",
       icon: swahilibox,
       iconBg: "#383E56",
-      date: "Jan 2024 - Present",
+      date: "2022 - Present",
       points: [
-        "Developed responsive and user-friendly websites using HTML5, CSS3, and JavaScript, ensuring cross-browser compatibility and accessibility standards compliance.",
         "Utilized modern front-end frameworks like React.js to create interactive and dynamic user interfaces, enhancing user engagement and experience.",
         "Integrated backend technologies such as Node.js to build full-stack web applications, ensuring seamless communication between frontend and backend components.",
         "Designed and optimized web applications for performance, implementing techniques such as code splitting, lazy loading, and image optimization to improve loading times and runtime efficiency.",
@@ -162,12 +161,11 @@ import {
       company_name: "SwahiliBox",
       icon: swahilibox,
       iconBg: "#E6DEDD",
-      date: "Jan 2024 - Present",
+      date: "2023 - Present",
       points: [
         "Developed end-to-end web applications using a combination of front-end and back-end technologies, including HTML, CSS, JavaScript, React.js, Node.js, and Express.js.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Participated in Agile development methodologies, including sprint planning, daily stand-ups, and retrospectives, to deliver features iteratively and efficiently, ensuring timely delivery of high-quality software products.",
-        "Stayed updated with the latest technologies and best practices in full-stack development, continuously learning and improving skills to deliver cutting-edge solutions.",
       ],
     },
   ];

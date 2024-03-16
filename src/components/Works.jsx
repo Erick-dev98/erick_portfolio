@@ -25,7 +25,6 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
           alt={name}
           className='w-full h-full object-cover rounded-2xl cursor-pointer'
           onClick={() => window.open(project_link, "_blank")}
-
           />
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
@@ -42,7 +41,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
           </div>
         </div>
 
-        <div className='mt-5'> 
+        <div className='mt-5 cursor-pointer' onClick={() => window.open(project_link, "_blank")}> 
         <h3 className='text-white font-bold text-[24px]'>{name}</h3>
         <p className='mt-2 text-secondary text-[14px]'>{description}</p>
         </div>
