@@ -123,7 +123,7 @@ import {
       company_name: "SwahiliBox",
       icon: swahilibox,
       iconBg: "#383E56",
-      date: "2022 - Present",
+      date: "2024 - Present",
       points: [
         "Developed user interface components using ReactJs, Redux, NextJs, threeJs, Redux, Tailwind.css and Bootstrap focusing on state management and component lifecycle methods.",
         "Translated design mockups into responsive web pages, ensuring consistency across devices.",
@@ -136,7 +136,7 @@ import {
       company_name: "SwahiliBox",
       icon: swahilibox,
       iconBg: "#E6DEDD",
-      date: "2022 - Present",
+      date: "2024 - Present",
       points: [
         "Developed scalable and efficient server-side applications using Node.js, leveraging its asynchronous and event-driven architecture.",
         "Designed and implemented RESTful APIs for seamless communication between client-side and server-side components, adhering to best practices and standards.",
@@ -149,7 +149,7 @@ import {
       company_name: "SwahiliBox",
       icon: swahilibox,
       iconBg: "#383E56",
-      date: "2022 - Present",
+      date: "2024 - Present",
       points: [
         "Utilized modern front-end frameworks like React.js to create interactive and dynamic user interfaces, enhancing user engagement and experience.",
         "Integrated backend technologies such as Node.js to build full-stack web applications, ensuring seamless communication between frontend and backend components.",
@@ -161,7 +161,7 @@ import {
       company_name: "SwahiliBox",
       icon: swahilibox,
       iconBg: "#E6DEDD",
-      date: "2023 - Present",
+      date: "2024 - Present",
       points: [
         "Developed end-to-end web applications using a combination of front-end and back-end technologies, including HTML, CSS, JavaScript, React.js, Node.js, and Express.js.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
